@@ -1,0 +1,31 @@
+{
+  "name": "machinepack-brreg",
+  "version": "1.0.0",
+  "description": "Return info about Norwegian company based on company-ID",
+  "scripts": {
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+  },
+  "author": "cappern",
+  "keywords": [
+    "BRREG",
+    "machines",
+    "machinepack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "machine": "^3.0.0",
+    "machinepack-http": "^2.0.1"
+  },
+  "devDependencies": {
+    "test-machinepack-mocha": "^0.2.2"
+  },
+  "machinepack": {
+    "friendlyName": "BRREG",
+    "machineDir": "machines/",
+    "machines": [
+      "get-number",
+      "get-name"
+    ]
+  }
+}
